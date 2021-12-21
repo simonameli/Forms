@@ -1,0 +1,15 @@
+.form-group{
+  padding: 10px;
+}
+.labels{
+  padding-bottom: 5px;
+}
+.subutton{
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.areaText{
+  width: 100%;
+ 
+}
