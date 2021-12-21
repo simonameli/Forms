@@ -1,15 +1,17 @@
 <form>
 <div class="form-group">
   <div class="labels">
-    <label for="fistName"> First Name </label></div>
-      <input id="fistName" type="text" class="form-control areaText">
+    <label for="firstName"> First Name </label></div>
+      <input required ngModel name="firstName" #firstName="ngModel" id="firstName" type="text" class="form-control areaText">
+      <div class="alert alert-danger alertText" *ngIf="firstName.touched && !firstName.valid"> First Name is required</div>
     </div>
 
     <div class="form-group">
     <div class="labels">
       <label for="comment"> Comments </label></div>
-        <textarea id="comment" cols="30" rows="10" type="text" class="form-control areaText">
+        <textarea ngModel name="comment" #comment="ngModel" id="comment" cols="30" rows="10" type="text" class="form-control areaText">
       </textarea>
     </div>
     <button class="btn btn-primary subutton"> Submit </button>
+    
 </form>
