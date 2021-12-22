@@ -1,4 +1,4 @@
-<form>
+<form #f="ngForm" (ngSubmit)="submit(f)">
 <div class="form-group">
   <div class="labels">
     <label for="firstName"> First Name </label></div>
@@ -12,6 +12,12 @@
         <textarea ngModel name="comment" #comment="ngModel" id="comment" cols="30" rows="10" type="text" class="form-control areaText">
       </textarea>
     </div>
-    <button class="btn btn-primary subutton"> Submit </button>
+    <div class="checkbox">
+      <label for="">
+        <input type="checkbox" ngModel name="isSubscribed"> Subscribe to a mailing list
+      </label>
+    </div>
+    <p> {{f.value | json}}</p>
+    <button class="btn btn-primary subutton" [disabled]="!f.valid"> Submit </button>
     
 </form>

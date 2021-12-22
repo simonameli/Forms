@@ -9,5 +9,8 @@ export class ContactFormComponent {
 
   push: boolean = false;
   
-
+submit(f){
+  let a = f.value.toString();
+  console.log(a);
+}
 }
