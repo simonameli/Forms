@@ -1,3 +1,3 @@
-# angular- for dummies
+# angular - for dummies
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-yxmbzu)
