@@ -16,9 +16,9 @@ submit(f){
 
 contactMethods =[
   { id: 1, name:'email'},
-  { id: 1, name:'phone'},
-  { id: 1, name:'pidgeon'},
-  { id: 1, name:'pec'},
+  { id: 2, name:'phone'},
+  { id: 3, name:'pidgeon'},
+  { id: 4, name:'pec'},
 ];
 
 }

@@ -31,6 +31,7 @@
     </select>
   </div>
   <!-- radio buttons manual -->
+ 
   <div class="radio">
     <label>
         <input ngModel type="radio" name="contactMethod" value="1">
@@ -49,19 +50,16 @@
     Giallo
   </label>
   </div>
+
 <hr>
 <!-- radio buttons dynamic -->
-<div class="radio-dynamic">
-  <div *ngFor="let method of contactMethods" class="radio-dynamic">
+<div *ngFor="let method of contactMethods" class="radio">
 <label>
-  <input ngModel type="radio" name="contactMethod" value="method.id">
+  <input ngModel type="radio" name="contactMethod" 
+  [value]="method.id">
   {{method.name}}
 </label>
 </div>
-</div>
-
-
     <p> {{f.value | json}}</p>
-    <button class="btn btn-primary subutton" [disabled]="!f.valid"> Submit </button>
-    
+    <button class="btn btn-primary subutton" [disabled]="!f.valid"> Submit </button>  
 </form>
