@@ -13,10 +13,24 @@
       </textarea>
     </div>
     <div class="checkbox">
-      <label for="">
+      <label for="checkbox">
         <input type="checkbox" ngModel name="isSubscribed"> Subscribe to a mailing list
       </label>
     </div>
+    <div class="form-group">
+      <div class="labels contactL">
+      <label for="contactMethod ">
+        Contact Methodd
+    </label>
+  </div>
+    <select ngModel='contactMethod' name="contactMethod" id="contactMethod" class="form-control">
+      <option value=""></option>
+      <option *ngFor="let method of contactMethods" [value]="method.id">
+      {{method.name}}
+      </option>
+
+    </select>
+  </div>
     <p> {{f.value | json}}</p>
     <button class="btn btn-primary subutton" [disabled]="!f.valid"> Submit </button>
     

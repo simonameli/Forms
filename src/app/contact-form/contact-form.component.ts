@@ -13,4 +13,12 @@ submit(f){
   let a = f.value.toString();
   console.log(a);
 }
+
+contactMethods =[
+  { id: 1, name:'email'},
+  { id: 1, name:'phone'},
+  { id: 1, name:'pidgeon'},
+  { id: 1, name:'pec'},
+];
+
 }
